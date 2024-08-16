@@ -19,5 +19,10 @@ namespace netView {
       InitializeComponent();
       DataContext = new MainViewModel();
     }
+
+    private void Button_Click(object sender, RoutedEventArgs e) {
+      var message = new MainViewModel().Message;
+      Console.WriteLine(message);
+    }
   }
 }
